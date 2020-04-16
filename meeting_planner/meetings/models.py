@@ -4,6 +4,8 @@ from datetime import time
 # Create your models here.
 class Room(models.Model):
     room_name = models.CharField(max_length=100)
+    # https://docs.djangoproject.com/en/3.0/ref/models/fields/
+    # looking up how to do a picklist for the choices
     floor_num_choices = [
         ('FIRST', '1st'),
         ('SECOND', '2nd'),
